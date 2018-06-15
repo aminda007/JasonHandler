@@ -10,7 +10,7 @@ with open('train-v1.1.json') as data_file:
         #         print(element["title"])
 
         # dataArray = dataArray.splice(0, 300);
-        del dataArray[0:441]
+        del dataArray[441:442]
         print("1111111111111111111111111111111")
         # print(file)
         print("1111111111111111111111111111111")
@@ -112,27 +112,12 @@ with open('train-v1.1.json') as data_file:
         # add second context
         paragraphArray.append(contextObj)
 
-
-
-
         # add paragraph to object
         obj1['paragraphs'] = paragraphArray
         # append object to data array
         dataArray.append(obj1)
 
         print(file)
-
-
-        # print(paragraphs)
-
-        # for element in data:
-        #         print()
-                # del element['hours']
-        # for element in data:
-        #         element.pop('hours', None)
-        #
-
-
 
 
         with open('data.json', 'w') as data_file:
