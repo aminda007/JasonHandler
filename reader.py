@@ -11,23 +11,29 @@ with open('train-v1.1.json') as data_file:
 
         # dataArray = dataArray.splice(0, 300);
         del dataArray[441:442]
-        print("1111111111111111111111111111111")
+        print("**************************************")
         # print(file)
-        print("1111111111111111111111111111111")
+        print("***************************************")
         print(len(dataArray))
         for element in dataArray:
                 print(element["title"])
+
+
+        # ****************************************************************************************************
+        # ****************************************************************************************************
 
         obj1 = {}
         obj1['title'] = "Java"
         paragraphArray = []
 
 
+        # 11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
         # start first context object
         contextObj = {}
         contextObj['context'] = "Java is programmmm"
         # start qas array
         qasArray = []
+        # 2222222222222222222222222222222222222222222222222222222222
         # first answer object
         ansObj={}
         ansArray=[]
@@ -39,6 +45,7 @@ with open('train-v1.1.json') as data_file:
         ansObj['question'] = "What is Java?"
         ansObj['id'] = "57359bbcdc94161900571ee9"
         qasArray.append(ansObj)
+        # 222222222222222222222222222222222222222222222222222222222222
         # second answer object
         ansObj = {}
         ansArray = []
@@ -51,6 +58,7 @@ with open('train-v1.1.json') as data_file:
         ansObj['id'] = "57359bbcdc94161900571ee9"
         qasArray.append(ansObj)
         # third answer object
+        # 22222222222222222222222222222222222222222222222222222222222222
         ansObj = {}
         ansArray = []
         answerObj1 = {}
@@ -68,12 +76,13 @@ with open('train-v1.1.json') as data_file:
 
 
 
-
+        #11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
         # start second context object
         contextObj = {}
         contextObj['context'] = "Java is programmmm"
         # start qas array
         qasArray = []
+        # 222222222222222222222222222222222222222222222222222222222
         # first answer object
         ansObj = {}
         ansArray = []
@@ -85,6 +94,7 @@ with open('train-v1.1.json') as data_file:
         ansObj['question'] = "What is Java?"
         ansObj['id'] = "57359bbcdc94161900571ee9"
         qasArray.append(ansObj)
+        # 222222222222222222222222222222222222222222222222222222222
         # second answer object
         ansObj = {}
         ansArray = []
@@ -96,6 +106,7 @@ with open('train-v1.1.json') as data_file:
         ansObj['question'] = "What is Java?"
         ansObj['id'] = "57359bbcdc94161900571ee9"
         qasArray.append(ansObj)
+        # 222222222222222222222222222222222222222222222222222222222
         # third answer object
         ansObj = {}
         ansArray = []
@@ -111,6 +122,11 @@ with open('train-v1.1.json') as data_file:
         contextObj['qas'] = qasArray
         # add second context
         paragraphArray.append(contextObj)
+
+
+        # *****************************************************************************************************
+        # *****************************************************************************************************
+
 
         # add paragraph to object
         obj1['paragraphs'] = paragraphArray
